@@ -58,7 +58,7 @@ from langdetect import detect
 from bs4 import BeautifulSoup
 from googlesearch import search
 from translate import Translator
-from cryptography.fernet import Fernet
+...
 from datetime import datetime, timedelta
 from pyowm.commons.exceptions import NotFoundError
 
@@ -69,31 +69,6 @@ from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 
 
-class Encryption():
-    """
-    Args:
-        None
-
-    Attributes:
-        key (bytes): The secret key used for encryption and decryption.
-        fernet (Fernet): The Fernet object initialized with the secret key.
-
-    Methods:
-        encrypt(data): Encrypts the provided data using the Fernet encryption algorithm.
-        decrypt(encMessage): Decrypts the provided encrypted message using the Fernet encryption algorithm.
-
-    """
-    def __init__(self) -> None:
-        self.key = config.secret_key
-        self.fernet = Fernet(self.key)
-    def encrypt(self, data):
-        encMessage = self.fernet.encrypt(data.encode())
-        return encMessage
-    
-    def decrypt(self, encMessage):
-        decMessage = self.fernet.decrypt(encMessage).decode()
-        return decMessage
-    
 
     
 
@@ -228,6 +203,7 @@ def search_pdf(query):
 
 
 
+
 """                                                   """
 """    Weather classification and getting info        """
 """                                                   """
@@ -297,6 +273,8 @@ def get_weather(text):
         
     except NotFoundError:
         return "Місто не знайдено, спробуйте ввести інше місто"
+
+
 
 
 """                                           """
@@ -399,6 +377,11 @@ def AI_responce_without_log(message, language_target: bool = False):
         
     # If no response with text is found, return the first response's content (which may be empty)
     return response.choices[0].message.content
+
+
+class Encryption():
+  ...
+    
 
 
 language_names = {
