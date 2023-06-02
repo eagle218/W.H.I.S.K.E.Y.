@@ -2,9 +2,6 @@
 This file contains various helper functions for a Telegram bot.
 
 Functionality provided by this program includes:
-
-    Encryption: 
-        Provides encryption and decryption functions.
     data_parser: 
         Parses news data from a specified URL and returns a list of news articles.
     learning_resources_links: 
@@ -13,6 +10,8 @@ Functionality provided by this program includes:
         Classifies weather-related text and extracts the city name mentioned in the text.
     AI_responce: 
         Generates an AI response based on a user's conversation history using the OpenAI GPT-3.5 Turbo model.
+    Encryption: 
+        Provides encryption and decryption functions.
     translate_text: 
         Translates text from one language to another using a translation service.
     generate_image: 
@@ -26,6 +25,8 @@ Functionality provided by this program includes:
     find_weekday: Finds the weekday for a given date.
 
 """
+
+   
 
 import json
 import openai
