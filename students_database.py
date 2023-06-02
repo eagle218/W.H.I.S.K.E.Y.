@@ -388,8 +388,6 @@ class Student:
         self.c.execute("DELETE FROM telegram_users WHERE id = ?", (id,))
         self.conn.commit()
 
-st = Student()
-print(st.select_users_id())
 """                                           """
 """              translated Words             """
 """                                           """

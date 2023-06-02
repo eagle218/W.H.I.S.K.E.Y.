@@ -380,9 +380,8 @@ def AI_responce_without_log(message, language_target: bool = False):
 
 
 class Encryption():
-  ...
+    ...
     
-
 
 language_names = {
     'af': 'африкаанс',
