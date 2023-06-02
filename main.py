@@ -113,7 +113,7 @@ from students_database import Student, OpenAiChatHistory, ScheduleTable, Homewor
 """    Student Database initialization        """
 """                                           """
 student = Student()
-ScheduleTable = ScheduleTable()
+scheduleTable = ScheduleTable()
 homeworkData  = HomeworkBot()
 wordDataBase  = WordDatabase()
 """                                           """
@@ -439,7 +439,7 @@ async def new_schedule(message: types.Message):
             - Send a reply to the user requesting them to provide the missing or correct data.
 
     """
-    if ScheduleTable.check_booked_time(group_name, day_of_week, start_time) == False:
+    if scheduleTable.check_booked_time(group_name, day_of_week, start_time) == False:
         await message.reply(f"❌ Цей часовий проміжок вже обран:")
         return
     await message.reply(f"<b>Ім'я групи - {group_name.lower().title()}\nдень неділі - {day_of_week.lower().title()}\nНазва предмету - {subject.lower().title()}\nПочаток - {start_time}\nПідтвердіть:</b>", reply_markup=keyboard_third)
@@ -484,7 +484,7 @@ async def check_schedule_for_all_groups():
         # Retrieve schedules for all users
         for id_data in users_id:
             try:
-                tgUserSchedule = ScheduleTable.get_schedule_data_using_telegramID(id_data[0], bot_utils.find_weekday())
+                tgUserSchedule = scheduleTable.get_schedule_data_using_telegramID(id_data[0], bot_utils.find_weekday())
                 if tgUserSchedule is False:
                     continue
                 user_schedules[id_data[0]] = tgUserSchedule
@@ -571,16 +571,16 @@ async def schedule_day(message: types.Message, day_num: str = None):
         
     else:
         group_name = student.check_group_for_user(user_id)
-        current_day_schedule = ScheduleTable.get_schedule_message(group_name, message['text'][16:].strip())
+        current_day_schedule = scheduleTable.get_schedule_message(group_name, message['text'][16:].strip())
         day = message["text"][16:].strip()
    
         choices = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', "П'ятниця", 'Субота', 'Неділя']
         match = process.extractOne(day, choices)
      
-        available_groups = ScheduleTable.select_all_groups()
+        available_groups = scheduleTable.select_all_groups()
         available_groups_text = " "
         if match[1] > 60:  # minimum similarity threshold
-            current_day_schedule = ScheduleTable.get_schedule_message(group_name, match[0])
+            current_day_schedule = scheduleTable.get_schedule_message(group_name, match[0])
             print(current_day_schedule)
             if current_day_schedule:
                 schedule_message = " "
@@ -616,7 +616,7 @@ async def test_schedule(message: types.Message):
     current_time = time.strftime("%H:%M")
    
     user_id = message.from_user.id
-    current_day_schedule = ScheduleTable.get_schedule_message(student.check_group_for_user(user_id), bot_utils.find_weekday())
+    current_day_schedule = scheduleTable.get_schedule_message(student.check_group_for_user(user_id), bot_utils.find_weekday())
    
     if current_day_schedule:
         schedule_message = " "
@@ -2159,12 +2159,12 @@ async def process_callback_schedule_confirm(callback_query: types.CallbackQuery)
   
     num_week = 1
     # Get the updated schedule for the day after adding the subject
-    schedule_of_day = ScheduleTable.get_subject_by_day_and_time(group_name, day_of_week, start_time, num_week)
+    schedule_of_day = scheduleTable.get_subject_by_day_and_time(group_name, day_of_week, start_time, num_week)
     
     await bot.send_message(callback_query.message.chat.id, f"<b>\U00002705 Предмет було успішно добавлено у ваш розклад</b>")
     await bot.answer_callback_query(callback_query.id, "schedule updating confirm!")
     
-    ScheduleTable.insert_test(group_name, day_of_week, subject, start_time, num_week=1)
+    scheduleTable.insert_test(group_name, day_of_week, subject, start_time, num_week=1)
     # Update the message with the new schedule day
     callback_query.message.text = f"/schedule_day {callback_query.message.text[30:38]}"
     await callback_query.message.edit_text(text=callback_query.message.text)
