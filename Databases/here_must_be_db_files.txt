@@ -1,0 +1,3 @@
+This folder contains two databases:
+    A database (DB) that stores data about Telegram users, including their IDs.
+    A database (DB) that contains user schedules and other related information.
