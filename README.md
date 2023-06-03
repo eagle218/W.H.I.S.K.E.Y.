@@ -29,48 +29,48 @@ main.py:
 
 bot_utils.py:
 
-  Telegram Bot Helper Functions
+    Telegram Bot Helper Functions
 
-  This repository contains various helper functions for a Telegram bot. These functions provide different functionalities such as encryption, data parsing, learning resources retrieval, weather classification, AI response generation, translation, image generation, image classification, background removal, document creation, and weekday finding.
+    This repository contains various helper functions for a Telegram bot. These functions provide different functionalities such as encryption, data parsing, learning resources retrieval, weather classification, AI response generation, translation, image generation, image classification, background removal, document creation, and weekday finding.
 
-  Table of Contents
-  Encryption
+    Table of Contents
+    Encryption
 
-  encrypt(message, key): Encrypts a message using a specified key.
-  decrypt(ciphertext, key): Decrypts a ciphertext using a specified key.
-  Data Parser
+    encrypt(message, key): Encrypts a message using a specified key.
+    decrypt(ciphertext, key): Decrypts a ciphertext using a specified key.
+    Data Parser
 
-  data_parser(url): Parses news data from the specified URL and returns a list of news articles.
-  Learning Resources Links
+    data_parser(url): Parses news data from the specified URL and returns a list of news articles.
+    Learning Resources Links
 
-  learning_resources_links(query): Retrieves a list of learning resource links related to the given query.
-  Weather Classification
+    learning_resources_links(query): Retrieves a list of learning resource links related to the given query.
+    Weather Classification
 
-  weather_classified(text): Classifies weather-related text and extracts the mentioned city name.
-  AI Response Generation
+    weather_classified(text): Classifies weather-related text and extracts the mentioned city name.
+    AI Response Generation
 
-  AI_response(conversation_history): Generates an AI response based on the user's conversation history using the OpenAI GPT-3.5 Turbo model.
-  Translation
+    AI_response(conversation_history): Generates an AI response based on the user's conversation history using the OpenAI GPT-3.5 Turbo model.
+    Translation
 
-  translate_text(text, source_lang, target_lang): Translates text from one language to another using a translation service.
-  Image Generation
+    translate_text(text, source_lang, target_lang): Translates text from one language to another using a translation service.
+    Image Generation
 
-  generate_image(query): Generates an image based on the specified query.
-  Image Classification
+    generate_image(query): Generates an image based on the specified query.
+    Image Classification
 
-  imageClassification(image_path): Performs image classification using a pre-trained model.
-  Background Removal
+    imageClassification(image_path): Performs image classification using a pre-trained model.
+    Background Removal
 
-  background_remove(image_path, output_path): Removes the background from an input image and saves the result.
-  Document Creation for Special Topic
+    background_remove(image_path, output_path): Removes the background from an input image and saves the result.
+    Document Creation for Special Topic
 
-  document_creating_for_special_topic(topic, group, your_name, instructor_name): Creates a document with the specified topic, group, your name, and instructor name.
-  Weekday Finding
+    document_creating_for_special_topic(topic, group, your_name, instructor_name): Creates a document with the specified topic, group, your name, and instructor name.
+    Weekday Finding
 
-  find_weekday(date): Finds the weekday for the given date.
-  For detailed information about each function, please refer to the respective function's documentation in the code.
+    find_weekday(date): Finds the weekday for the given date.
+    For detailed information about each function, please refer to the respective function's documentation in the code.
 
-  This bot is developed using the aiogram library.
+    This bot is developed using the aiogram library.
 
 
 
