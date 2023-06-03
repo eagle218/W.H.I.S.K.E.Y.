@@ -7,24 +7,24 @@ This app provides various functionalities to help students using Telegram Messen
 
 main.py:
 
-  Functionality provided by this app includes:
+    Functionality provided by this app includes:
 
-  Schedule Operations;
+    Schedule Operations;
 
-  Document Operations;
+    Document Operations;
 
-  Foreign words operation;
+    Foreign words operation;
 
-  Task Operations;
+    Task Operations;
 
-  Homework Operations;
+    Homework Operations;
 
-  AI Operations;
+    AI Operations;
 
-  Miscellaneous Operations;
+    Miscellaneous Operations;
 
 
-  Note: Some commands require additional user input or file uploads for proper functionality.
+    Note: Some commands require additional user input or file uploads for proper functionality.
 
 
 bot_utils.py:
