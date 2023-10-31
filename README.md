@@ -1,7 +1,12 @@
-Telegram bot to help students
+Telegram Bot W.H.I.S.K.E.Y. to help students
 
-![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/ccc0bb47-9f80-442d-bc5a-eef0a8a57e4e)![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/7fe14841-0fb8-46c8-bd75-0dbd802e8c18)# W.H.I.S.K.E.Y.
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/223999a6-60d1-4c85-b8dc-cbd25bf5b3e0)Telegram bot to help students
 ![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/0fbf8dbe-25e6-4418-a4d2-631b37a924b7)
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/ccc0bb47-9f80-442d-bc5a-eef0a8a57e4e)![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/7fe14841-0fb8-46c8-bd75-0dbd802e8c18)# W.H.I.S.K.E.Y.
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/17bf5f95-3aab-415a-a89c-78becee8cacd)
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/2d85532e-d67b-40d0-80e3-6600f3d0adf7)
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/37e56467-d413-4de3-b78f-3ca6314dc918)
+
 
 
 
