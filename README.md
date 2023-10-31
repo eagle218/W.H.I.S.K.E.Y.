@@ -1,7 +1,10 @@
-![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/7fe14841-0fb8-46c8-bd75-0dbd802e8c18)# W.H.I.S.K.E.Y.
-
-
 Telegram bot to help students
+
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/ccc0bb47-9f80-442d-bc5a-eef0a8a57e4e)![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/7fe14841-0fb8-46c8-bd75-0dbd802e8c18)# W.H.I.S.K.E.Y.
+![image](https://github.com/eagle218/W.H.I.S.K.E.Y./assets/113504886/0fbf8dbe-25e6-4418-a4d2-631b37a924b7)
+
+
+
 
 Telegram Messenger
 This app provides various functionalities to help students using Telegram Messenger. It uses an SQLite database for data storage and retrieval.
